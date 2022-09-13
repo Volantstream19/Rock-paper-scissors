@@ -23,3 +23,13 @@ header {
 main {
     padding: 20px;
 }
+
+.fights img {
+    object-fit: scale-down;
+    height: 10vh;
+    width: 10vw;
+    background-size: cover;
+}
+
+#player-fight img {
+}
