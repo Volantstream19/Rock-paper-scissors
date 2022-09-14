@@ -31,6 +31,7 @@ function runGame(player) {
 
     playerFightImg.src = `${player}.jpg`;
     computerFightImg.src = `${computerResult}.jpg`;
+    console.log(playerFightImg);
 }
 
 /* Components */
