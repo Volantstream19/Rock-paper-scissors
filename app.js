@@ -1,47 +1,54 @@
+const computerFight = ['Jackson', 'Spongebob', 'Patrick'];
+
+function getRandomNumber(choices) {
+    return Math.floor(Math.random() * choices);
+}
+
+function generateFight(array) {
+    const random = getRandomNumber(array.length);
+    const item = array[random];
+    return item;
+}
+
 /* Imports */
-
-/* State */
-const  = document.getElementById('sponge-Bob');
-spongeBob.addEventListener('click', () => {
-    runGame('spongeBob');
-});
-const  = document.getElementById('pat-Rick');
-spongeBob.addEventListener('click', () => {
-    runGame('patRick');
-});
-const  = document.getElementById('squid-Ward');
-    spongeBob.addEventListener('click', () => {
-    runGame('squidWard');
-});
+const SpongebobFight = document.getElementById('Spongebob');
+const PatrickFight = document.getElementById('Patrick');
+const JacksonFight = document.getElementById('Jackson');
 const results = document.getElementById('results');
-const playerFight = document.getElementById('player-fight');
-const computerFight = document.getElementById('computer-Fight');
-const resultImage = document.getElementById('result-image');
+const playerFightImg = document.getElementById('playerFight');
+const computerFightImg = document.getElementById('computerFight');
+/* State */
 
-function runGame(player) {
-    const computer = generateFight();
-    const result = score(player, computer);
-
-
-
-function setStatus(element, isWinner) {
-    const topLevelElement = element.parentElement.parentElement;
-    if (isWinner) {
-        topLevelElement.classList.add('winner');
-        }
-        else {
-            topLevelElement.classList.remove('winner');
-        }
-    }
 /* Actions */
 function loadPage() {}
+function runGame(player) {
+    const computerResult = generateFight(computerFight);
+
+    console.log(computerResult);
+    console.log(player);
+
+    results.classList.remove('hidden');
+
+    playerFightImg.src = `${player}.jpg`;
+    computerFightImg.src = `${computerResult}.jpg`;
+}
 
 /* Components */
 
 /* Component */
-// get DOM
-// display
-// event listeners
 
-/* Run page load code */
+// get DOM
+
+// display
+
+// event listeners
+SpongebobFight.addEventListener('click', () => {
+    runGame('Spongebob');
+});
+PatrickFight.addEventListener('click', () => {
+    runGame('Patrick');
+});
+JacksonFight.addEventListener('click', () => {
+    runGame('Jackson');
+});
 loadPage();

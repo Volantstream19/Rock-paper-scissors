@@ -30,6 +30,6 @@ main {
     width: 10vw;
     background-size: cover;
 }
-
-#player-fight img {
+.hidden {
+    visibility: hidden;
 }
