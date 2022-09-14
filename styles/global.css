@@ -1,6 +1,7 @@
 :root {
-    --background: rgb(224, 234, 247);
-    --header-background: white;
+    background: rgb(150, 127, 166);
+    background: linear-gradient(153deg, rgba(150, 127, 166, 1) 0%, rgba(22, 19, 23, 1) 100%);
+    --header-background: rgb(158, 158, 158);
     --footer-background: rgb(243, 242, 242);
 }
 
