@@ -26,6 +26,7 @@ const choose = document.getElementById('Choose');
 let gameState = 'guess';
 let wins = '0';
 let total = '0';
+let losses = '0';
 
 /* Actions */
 function loadPage() {
@@ -96,7 +97,7 @@ JacksonFight.addEventListener('click', () => {
 function displayScoreboard() {
     totalDisplay.textContent = total;
     winsDisplay.textContent = wins;
-    lossesDisplay.textContent = total - wins;
+    lossesDisplay.textContent = losses;
 }
 function displayState() {
     if (gameState === 'results') {
