@@ -1,40 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>Web App</title>
+        <link rel="icon" type="image/x-icon" href="/assets/alchemy-favicon.png" />
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="/assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&family=Titillium+Web:wght@200;400;600&display=swap"
+        />
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&family=Titillium+Web:wght@200;400;600&display=swap">
+        <!-- css -->
+        <link rel="stylesheet" href="/styles/reset.css" />
+        <link rel="stylesheet" href="/styles/global.css" />
+    </head>
 
-    <!-- css -->
-    <link rel="stylesheet" href="/styles/reset.css" />
-    <link rel="stylesheet" href="/styles/global.css" />
-</head>
+    <body>
+        <header>
+            <img src="/assets/html_css_js.png" />
+            <h1>Rock Paper Scissors spinoff</h1>
+        </header>
 
-<body>
-    <header>
-        <img src="/assets/html_css_js.png">
-        <h1>Web App</h1>
-    </header>
+        <main>
+            <section id="scoreboard">
+                <h2>Scoreboard</h2>
+                <ul class="scores">
+                    <li>wins: <span id="wins-display">0</span></li>
+                    <li>losses: <span id="losses-display">0</span></li>
+                    <li>total: <span id="total-display">0</span></li>
+                </ul>
+            </section>
 
-    <main>
+            <section class="fights" id="Choose">
+                <h2>Choose Your Fighter</h2>
+                <button class="fight" id="Patrick">
+                    <img src="Patrick.jpg" />
+                </button>
+                <button class="fight" id="Spongebob">
+                    <img src="Spongebob.jpg" />
+                </button>
+                <button class="fight" id="Jackson">
+                    <img src="Jackson.jpg" />
+                </button>
+            </section>
 
-    </main>
+            <div id="results" class="hidden">
+                <h2>Result</h2>
+            <section class="fights">
+                <div class="result">
+                    <h3>Player</h3>
+                    <div class="fight">
+                    <img id="playerFight" src="Spongebob.jpg"alt="Spongebob">
+                </div>
+            </div>
+            <div class="result">
+                <h3>VS</h3>
+            </div>
+                <div class="result">
+                    <h3>computer</h3>
+                    <div class="fight">
+                        <img id="computerFight" src="Spongebob.jpg" alt="Spongebob">
+                    </div>
+                    <button id="playAgainButton">Play Again!</button>
+                </div>
 
-</body>
-
+            </section>
+        </main>
+    </body>
 </html>
