@@ -26,7 +26,6 @@ const choose = document.getElementById('Choose');
 let gameState = 'guess';
 let wins = '0';
 let total = '0';
-let losses = '0';
 
 /* Actions */
 function loadPage() {
