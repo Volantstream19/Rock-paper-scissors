@@ -33,8 +33,17 @@
         </header>
 
         <main>
-            <h2>Choose Your Fighter</h2>
-            <section class="fights">
+            <section id="scoreboard">
+                <h2>Scoreboard</h2>
+                <ul class="scores">
+                    <li>wins: <span id="wins-display">0</span></li>
+                    <li>losses: <span id="losses-display">0</span></li>
+                    <li>total: <span id="total-display">0</span></li>
+                </ul>
+            </section>
+
+            <section class="fights" id="Choose">
+                <h2>Choose Your Fighter</h2>
                 <button class="fight" id="Patrick">
                     <img src="Patrick.jpg" />
                 </button>
@@ -63,7 +72,9 @@
                     <div class="fight">
                         <img id="computerFight" src="Spongebob.jpg" alt="Spongebob">
                     </div>
+                    <button id="playAgainButton">Play Again!</button>
                 </div>
+
             </section>
         </main>
     </body>
